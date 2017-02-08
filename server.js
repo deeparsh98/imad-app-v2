@@ -32,18 +32,18 @@ var articles = {
                         </p>
                     `,
             date : 'Feb 10,2017',
-            heading : 'Article One'
+            heading : 'Article Two'
         },
         'article-three' : {
             title: 'Article 3 | Arsh Bhargav',
           
             content: ` <p>
-                            This is the content for my first article ...I have nothing to write here...
+                            This is the content for my third article ...I have nothing to write here...
                        </p>
                       `
                        ,
             date : 'Feb 15,2017',
-            heading : 'Article One'
+            heading : 'Article Three'
         },
         
 };
