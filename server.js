@@ -5,23 +5,47 @@ var path = require('path');
 var app = express();
 
 
-var articleOne={
-    title: 'Article 1 | Arsh Bhargav',
-  
-    content: ` <p>
-                    This is the content for my first article ...I have nothing to write here...
-                </p>
-            
-                <p>
-                    This is the content for my first article ...I have nothing to write here...
-                </p>
-            
-                <p>
-                    This is the content for my first article ...I have nothing to write here...
-                </p>
-            `,
-    date : 'Feb 08,2017',
-    heading : 'Article One'
+var articles = {
+        'article-one' : {
+            title: 'Article 1 | Arsh Bhargav',
+          
+            content: ` <p>
+                            This is the content for my first article ...I have nothing to write here...
+                        </p>
+                    
+                        <p>
+                            This is the content for my first article ...I have nothing to write here...
+                        </p>
+                    
+                        <p>
+                            This is the content for my first article ...I have nothing to write here...
+                        </p>
+                    `,
+            date : 'Feb 08,2017',
+            heading : 'Article One'
+        },
+        'article-two' : {
+            title: 'Article 2 | Arsh Bhargav',
+          
+            content: ` <p>
+                            This is the content for my second article ...I have nothing to write here...
+                        </p>
+                    `,
+            date : 'Feb 10,2017',
+            heading : 'Article One'
+        },
+        'article-three' : {
+            title: 'Article 3 | Arsh Bhargav',
+          
+            content: ` <p>
+                            This is the content for my first article ...I have nothing to write here...
+                       </p>
+                      `
+                       ,
+            date : 'Feb 15,2017',
+            heading : 'Article One'
+        },
+        
 };
 function createTemplate(data)
 {
@@ -66,8 +90,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function (req, res) {
-  res.send(createTemplate(articleOne));
+app.get('/:articleName', function (req, res) {
+  res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
