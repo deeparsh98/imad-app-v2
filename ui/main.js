@@ -17,18 +17,34 @@ button.onclick = function(){
   request.send(null);
 };
 
-var nameInput = document.getElementById('name');
-var name= nameInput.value;
+
 var submit=document.getElementById('submit_btn');
 submit.onclick = function(){
-    var names= ['name1','name2','name3','name4'];
+     var request= new XMLHttpRequest();
     
-    var list='';
-    for(var i=0;i<names.length;i++)
-    {
-        list+= '<li>'+names[i]+'</li>';
+    request.onreadystatechange= function(){
+      if(request.readyState === XMLHttpRequest.DONE){
+          if(request.status === 200){
+               var names=request.response;
+               names=JSON.parce(names);
     
-    }
-    var ui= document.getElementById('listNames');
-    ui.innerHTML=list;
+                var list='';
+                for(var i=0;i<names.length;i++)
+                {
+                    list+= '<li>'+names[i]+'</li>';
+                
+                }
+                var ui= document.getElementById('listNames');
+                ui.innerHTML=list;
+                           
+          }
+      }
+    
+    };
+    var nameInput = document.getElementById('name');
+    var name= nameInput.value;
+    
+  request.open('GET','http://deeparsh98.imad.hasura-app.io/submit-name?name='+ name, true);
+  request.send(null);
+   
 };
