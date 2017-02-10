@@ -1,15 +1,11 @@
-console.log('Loaded!');
-var element=document.getElementById('madi');
+var button= document.getElementById('counter');
 
-var marginLeft=0;
-function moveRight(){
-    marginLeft=marginLeft+1;
+var counter=0;
+
+button.onlclick = function(){
     
-    madi.style.marginLeft=marginLeft+'px';
-}
-
-madi.onclick = function(){
-    var interval=setInterval(moveRight,30);
+    
+  counter=counter+1;
+  var span=document.getElementById('count');
+  span.innerHTML= counter.toString();
 };
-
-
