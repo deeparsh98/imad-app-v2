@@ -6,7 +6,7 @@ button.onclick = function(){
     request.onreadystatechange= function(){
       if(request.readyState === XMLhttpRequest.DONE){
           if(request.status === 200){
-                cnter=request.responseText;
+                var cnter=request.responseText;
                 var span=document.getElementById('count');
                 span.innerHTML= cnter.toString();
           }
