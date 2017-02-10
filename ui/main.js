@@ -1,11 +1,11 @@
 var button= document.getElementById('counter');
 
-var counter=0;
+var cnter=0;
 
 button.onlclick = function(){
     
     
-  counter=counter+1;
+  cnter=cnter+1;
   var span=document.getElementById('count');
-  span.innerHTML= counter.toString();
+  span.innerHTML= cnter.toString();
 };
