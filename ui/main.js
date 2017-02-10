@@ -2,7 +2,7 @@ var button= document.getElementById('counter');
 
 var cnter=0;
 
-button.onlclick = function(){
+button.onclick = function(){
     
     
   cnter=cnter+1;
