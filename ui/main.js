@@ -3,7 +3,7 @@ var element=document.getElementById('madi');
 
 var marginLeft=0;
 function moveRight(){
-    marginLeft=marginLeft+10;
+    marginLeft=marginLeft+1;
     
     madi.style.marginLeft=marginLeft+'px';
 }
