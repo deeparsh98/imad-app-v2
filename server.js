@@ -97,7 +97,7 @@ var comments=[];
 app.get('/a1',function(req, res){
     var newCom=req.query.newCom;
     comments.push(newCom);
-    res.send(JSON.stringify(comments));
+    //res.send(JSON.stringify(comments));
 });
 
 
