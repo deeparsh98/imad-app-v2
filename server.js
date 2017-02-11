@@ -10,15 +10,10 @@ var articles = {
             title: 'Article 1 | Arsh Bhargav',
           
             content: ` <p>
-                            This is the content for my first article ...I have nothing to write here...
-                        </p>
-                    
-                        <p>
-                            This is the content for my first article ...I have nothing to write here...
-                        </p>
-                    
-                        <p>
-                            This is the content for my first article ...I have nothing to write here...
+                            This is the content for my first article ...Here we are going to talk about the movie WORLD WAR :Z ..The movie which i think is known to you all ....isn't it??...
+                            <br/>
+                            It is really an amazing movie...So now you people will give comment about the same at the below link <br/> You can alsoo see the comments already given by others ..<br/>
+                            <a href="http://deeparsh98.imad.hasura-app.io/a1/comments"><u>COMMENTS</u></a>
                         </p>
                     `,
             date : 'Feb 08,2017',
@@ -94,6 +89,10 @@ var counter=0;
 app.get('/counter', function(req,res){
     counter=counter+1;
     res.send(counter.toString());
+});
+
+app.get('/a1/comments',function(req, res){
+    res.sendFile(path.join(__dirname,'ui','comments.html'));
 });
 
 var names=[];
