@@ -91,9 +91,6 @@ app.get('/counter', function(req,res){
     res.send(counter.toString());
 });
 
-app.get('/a1/comments',function(req, res){
-    res.sendFile(path.join(__dirname,'ui','comments.html'));
-});
 
 
 var comments=[];
@@ -102,6 +99,14 @@ app.get('/a1/comments',function(req, res){
     comments.push(newCom);
     res.send(JSON.stringify(comments));
 });
+
+
+app.get('/a1/comments',function(req, res){
+    res.sendFile(path.join(__dirname,'ui','comments.html'));
+});
+
+
+
 
 var names=[];
 app.get('/submit-name', function(req, res){
