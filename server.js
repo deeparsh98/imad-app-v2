@@ -12,7 +12,7 @@ var articles = {
             content: ` <p>
                             This is the content for my first article. Here we are going to talk about the movie WORLD WAR :Z <br/>The movie which i think is known to you all, isn't it?
                             <br/>
-                            It is really an amazing movie, so now you people will give comment about the same at the below link <br/> You can also see the comments given by others <br/>
+                            It is really an amazing movie, so now you people will give comments about the same at the below link <br/> You can also see the comments given by others <br/>
                             <a href="http://deeparsh98.imad.hasura-app.io/a1/comments"><u>COMMENTS</u></a>
                         </p>
                     `,
