@@ -9,12 +9,12 @@ getCom.onclick = function(){
  request.onreadystatechange = function(){
    if(request.readyState=== XMLHttpRequest.DONE){
        if(request.status===200){
-           var comments= request.response;
-           comments = JSON.parse(comments);
+           var coms= request.response;
+           coms = JSON.parse(coms);
            var list='';
-           for(var i=0;i<comments.length;i++)
+           for(var i=0;i<coms.length;i++)
            {
-               list+='<li>'+comments[i]+'</li>';
+               list+='<li>'+coms[i]+'</li>';
            }
            
            var ol=document.getElementById('olist');
