@@ -9,7 +9,8 @@ getCom.onclick = function(){
  request.onreadystatechange = function(){
    if(request.readyState=== XMLHttprequest.DONE){
        if(request.status===200){
-           var comments= JSON.parse(comments);
+           var comments= request.response;
+           comments = JSON.parse(comments);
            var list='';
            for(var i=0;i<comments.length;i++)
            {
@@ -23,7 +24,7 @@ getCom.onclick = function(){
  };
  var comment=document.getElementById('com');
 comment=comment.value;
-request.open('GET','http://deeparsh98@.imad.hasura-app.io/a1/comments?='+ comment, true);
+request.open('GET','http://deeparsh98@.imad.hasura-app.io/a1/comments?='+comment, true);
 request.send(null);
     
 };
