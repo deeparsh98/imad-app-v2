@@ -7,7 +7,7 @@ getCom.onclick = function(){
   var request= new XMLHttpRequest();
  
  request.onreadystatechange = function(){
-   if(request.readyState=== XMLHttprequest.DONE){
+   if(request.readyState=== XMLHttpRequest.DONE){
        if(request.status===200){
            var comments= request.response;
            comments = JSON.parse(comments);
