@@ -20,6 +20,10 @@ getCom.onclick = function(){
            var ol=document.getElementById('olist');
            olist.innerHTML='All of the comments are shown as follows : <br><ol style="padding-left:77px">'+list+'</ol>';
        }
+       else{
+           
+           olist.innerHTML='REQUESTS BLOCKED BY SERVER !!';
+       }
    }  
  };
  var comment=document.getElementById('com');
