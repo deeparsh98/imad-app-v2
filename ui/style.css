@@ -20,8 +20,19 @@ body {
     height: 200px;
 }
 
-.container{
-max-width: 413px;
+.container {
+    max-width: 806px;
+    margin: 0px auto;
+    color: black;
+    font-family: century gothic;
+    padding-top: 11px;
+    padding-left: 38px;
+    text-align: center;
+}
+
+
+.comments{
+max-width: 700px;
 margin: 0px auto;
 color: black;
 font-family: century gothic;
