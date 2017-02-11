@@ -70,7 +70,7 @@ function createTemplate(data)
                                     <div>
                                         ${date}
                                     </div>
-                                    <div>
+                                    <div class="comments">
                                         ${content}
                                     </div>
                                 </div>
