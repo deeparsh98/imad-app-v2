@@ -6,6 +6,8 @@ body {
 
 .center {
     text-align: center;
+    margin-top: 10px;
+    padding left : 80px;
 }
 
 .text-big {
@@ -27,7 +29,7 @@ body {
     margin: 0 auto;
     color: black;
     font-family: century gothic;
-    padding-top: 11px;
+    padding-top: 0px;
     padding-left: 38px;
     text-align: center;
 }
