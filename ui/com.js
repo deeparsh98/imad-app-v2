@@ -24,7 +24,7 @@ getCom.onclick = function(){
  };
  var comment=document.getElementById('com');
 comment=comment.value;
-request.open('GET','http://deeparsh98.imad.hasura-app.io/a1/comments?='+comment, true);
+request.open('GET','http://deeparsh98.imad.hasura-app.io/a1/comments?newCom='+comment, true);
 request.send(null);
     
 };
