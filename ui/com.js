@@ -18,7 +18,7 @@ getCom.onclick = function(){
            }
            
            var ol=document.getElementById('olist');
-           olist.innerHTML=list;
+           olist.innerHTML='All of the comments are shown as follows : <br>'+list;
        }
    }  
  };
