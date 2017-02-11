@@ -95,6 +95,14 @@ app.get('/a1/comments',function(req, res){
     res.sendFile(path.join(__dirname,'ui','comments.html'));
 });
 
+var comments=[];
+app.get('/a1/comments',function(req, res){
+    var newCom=req.query.newCom;
+    comments.push(newCom);
+    
+    res.send(JSON.stringify(comments));
+});
+
 var names=[];
 app.get('/submit-name', function(req, res){
   var name= req.query.name;
