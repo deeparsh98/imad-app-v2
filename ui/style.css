@@ -20,6 +20,11 @@ body {
     height: 200px;
 }
 
+.comments{
+    background-image:url("https://upload.wikimedia.org/wikipedia/en/d/dc/World_War_Z_poster.jpg");
+
+}
+
 .container {
     max-width: 806px;
     margin: 0px auto;
@@ -29,7 +34,4 @@ body {
     padding-left: 38px;
     text-align: center;
 }
-.comments{
-    background-image:url("https://upload.wikimedia.org/wikipedia/en/d/dc/World_War_Z_poster.jpg");
 
-}
