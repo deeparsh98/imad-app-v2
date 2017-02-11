@@ -93,12 +93,12 @@ app.get('/counter', function(req,res){
 
 
 
-var comments=[];
+/*var comments=[];
 app.get('/a1',function(req, res){
     var newCom=req.query.newCom;
     comments.push(newCom);
     //res.send(JSON.stringify(comments));
-});
+});*/
 
 
 app.get('/a1/comments',function(req, res){
