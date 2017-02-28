@@ -13,44 +13,6 @@ var config={
 };
 var app = express();
 
-
-var articles = {
-        'article-one' : {
-            title: 'Article 1 | Arsh Bhargav',
-          
-            content: ` <p>
-                            This is the content for my first article. Here we are going to talk about the movie WORLD WAR :Z <br/>The movie which i think is known to you all, isn't it?
-                            <br/>
-                            It is really an amazing movie, so now you people will give comments about the same at the below link <br/> You can also see the comments given by others <br/>
-                            <a href="http://deeparsh98.imad.hasura-app.io/a1/comments"><u>COMMENTS</u></a>
-                        </p>
-                    `,
-            date : 'Feb 08,2017',
-            heading : 'Article One'
-        },
-        'article-two' : {
-            title: 'Article 2 | Arsh Bhargav',
-          
-            content: ` <p>
-                            This is the content for my second article ...I have nothing to write here...
-                        </p>
-                    `,
-            date : 'Feb 10,2017',
-            heading : 'Article Two'
-        },
-        'article-three' : {
-            title: 'Article 3 | Arsh Bhargav',
-          
-            content: ` <p>
-                            This is the content for my third article ...I have nothing to write here...
-                       </p>
-                      `
-                       ,
-            date : 'Feb 15,2017',
-            heading : 'Article Three'
-        },
-        
-};
 function createTemplate(data)
 {
     var title=data.title;
